@@ -1,0 +1,8 @@
+# cat=tidy/enable; type=boolean; label=If set, the output html-code will be passed through "tidy" 
+enable = 1
+
+# cat=tidy/enable; type=options[All - the content is always passed through "tidy" before it may be stored in cache=all,Cached - only if the page is put into the cache=cached,Output - only the output code just before it's echoed out=output]; label= When should tidy be executed
+option = all
+
+# cat=tidy/enable; type=string; label=Path with options for tidy. For XHTML output, add " --output-xhtml true"
+path = tidy -i --quiet true --tidy-mark true -wrap 0 -raw
