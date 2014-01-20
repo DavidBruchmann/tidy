@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext "tidy".
 #
-# Auto generated 08-08-2015 23:23
+# Auto generated 10-08-2015 08:31
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'Use HTML Tidy to clean up your HTML output.',
 	'category' => 'fe',
 	'shy' => 0,
-	'version' => '1.0.0',
+	'version' => '1.0.1',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',

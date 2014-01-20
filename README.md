@@ -1,7 +1,7 @@
-t3ext-tidy
-==========
+TYPO3 Extension Tidy
+====================
 
-TYPO3 Extension: Use HTML Tidy to clean up your HTML output
+Use the command line tool HTML Tidy to clean up your HTML output.
 
 Introduction
 ------------
@@ -31,18 +31,20 @@ Installation
 
 Install the extension from the TYPO3 Extension Repository and set
 the options in the extension manager section of the TYPO3 Backend.
-
 The options set there are overriding options set via TYPO3_CONF_VARS,
 but the deprecated options still work as before.
-
 Be sure to install HTML Tidy to your server and set the tidy path 
 correctly.
-
 As soon as the functionality is enabled, tidy should be run when
 the frontend is rendered.
 
 
-Author
-------
+Credits
+-------
 Benni Mack created this extension as a replacement for the usage in 
 the TYPO3 CMS Core.
+
+The current development version can be found on
+https://github.com/b13/t3ext-tidy
+but please not that further active development for this extension is
+currently not planned.
