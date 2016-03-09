@@ -6,8 +6,8 @@ if (!defined('TYPO3_MODE')) {
 
 // fetch extension options and evaluate with existing TYPO3 Core options.
 // Extension options take precedence over the existing TYPO3 Core options.
-if (isset($TYPO3_CONF_VARS['EXT']['extConf']['tidy'])) {
-	$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['tidy'] = unserialize($TYPO3_CONF_VARS['EXT']['extConf']['tidy']);
+if (isset($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['tidy'])) {
+	$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['tidy'] = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['tidy']);
 } else {
 	$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['tidy'] = array(
 		'enable' => $GLOBALS['TYPO3_CONF_VARS']['FE']['tidy'],

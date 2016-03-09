@@ -15,13 +15,14 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'Use HTML Tidy to clean up your HTML output.',
 	'category' => 'fe',
 	'shy' => 0,
-	'version' => '1.0.2',
-	'dependencies' => '',
-	'conflicts' => '',
-	'priority' => '',
-	'loadOrder' => '',
-	'TYPO3_version' => '6.0.0-6.2.99',
-	'PHP_version' => '',
+	'version' => '1.0.3',
+    'constraints' => array(
+        'depends' => array(
+            'typo3' => '6.0.0-7.6.99',
+        ),
+        'conflicts' => array(),
+        'suggests' => array(),
+    ),
 	'module' => '',
 	'state' => 'beta',
 	'uploadfolder' => 0,
@@ -35,5 +36,3 @@ $EM_CONF[$_EXTKEY] = array(
 	'CGLcompliance' => '',
 	'CGLcompliance_note' => '',
 );
-
-?>
