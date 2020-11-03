@@ -18,14 +18,13 @@ if (isset($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['tidy'])) {
 
 // activate the hook depending if Tidy is activated
 if (!empty($GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['tidy']['enable'])) {
-
 	switch ($GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['tidy']['option']) {
 		case 'output':
-			$TYPO3_CONF_VARS['SC_OPTIONS']['tslib/class.tslib_fe.php']['isOutputting']['tx_tidy'] = 'B13\\Tidy\\Hook\\Tidy->tidyOutputContent';
+			$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['isOutputting']['tx_tidy'] = 'Bmack\\Tidy\\Hook\\Tidy->tidyOutputContent';
 		case 'all':
-			$TYPO3_CONF_VARS['SC_OPTIONS']['tslib/class.tslib_fe.php']['contentPostProc-all']['tx_tidy'] = 'B13\\Tidy\\Hook\\Tidy->tidyAllContent';
+			$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['contentPostProc-all']['tx_tidy'] = 'Bmack\\Tidy\\Hook\\Tidy->tidyAllContent';
 		case 'cached':
-			$TYPO3_CONF_VARS['SC_OPTIONS']['tslib/class.tslib_fe.php']['contentPostProc-all']['tx_tidy'] = 'B13\\Tidy\\Hook\\Tidy->tidyCachedContent';
+			$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['contentPostProc-all']['tx_tidy'] = 'Bmack\\Tidy\\Hook\\Tidy->tidyCachedContent';
 		break;
 	}
 }

@@ -44,7 +44,7 @@ Credits
 Benni Mack created this extension as a replacement for the usage in 
 the TYPO3 CMS Core.
 
-The current development version can be found on
-https://github.com/b13/t3ext-tidy
+The current development version can be found on  
+https://github.com/bmack/tidy  
 but please not that further active development for this extension is
 currently not planned.
